@@ -12,6 +12,7 @@
 
 # testing
 /coverage
+/lib/config/db.js
 
 # next.js
 /.next/
