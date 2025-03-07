@@ -1,13 +1,13 @@
 'use client'
 import { assets, blog_data } from '@/assets/assets'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, use } from 'react'
 import Image from 'next/image'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import axios from 'axios'
 
 const page = ({params}) => {
-    const[data,setData] = useState(null)
+    const[data,setData] = useState(null)    
 
     const fetchBlogData = async () => {
         const response = await axios.get('/api/blog',{
